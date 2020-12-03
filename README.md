@@ -173,7 +173,26 @@ For the bonus, you have to create a page to update a new movie. You need a `movi
 #### Iteration 7 | Delete a Movie
 Create a delete button on the detail page of each movie and create a `app.get("/movie/delete/:id", ...` route on the backend. 
 
-#### Iteration 8  (Bonus)
+
+## Part III - Authentication
+
+You app is going to be user based! 
+
+### Iteration 8 | Signup
+
+Create a signup route on the backend. It's very similar to the add movie route only this time you are adding an user. After you've verified the route with postman, it's time to create the react component. Manage the input field data with `useState()`, just like in the addMovie route.
+
+### Iteration 9 | Login
+Create a login route on the backend. This one is a bit different. Refer to the JWT Token lesson if you get lost. Create the backend route first, verify that it works with postman and create the react component after.
+
+### Iteration 10 | Protect Routes on the Backend
+You should only be able to add movies if you're authenticated. Protect the backend api endpoint. Use the JWT Token lesson as reference. 
+
+### Iteration 11 | Protect Routes on the Front-end
+An unauthenticated can still go to the add movie route in React. You should check in that component if there is a JWT Token in localstorage. If there isn't, redirect the user back to the homepage. Maybe you can solve it by looking up what `useHistory` does in the <a href="https://reactrouter.com/web/api/Hooks"> React Router Documentation </a>.
+
+
+#### Bonus Iteration A  (Bonus)
 
 Finally, we can insert a new image for the movie. You will want to store your <a href="https://my.ironhack.com/lms/courses/course-v1:IRONHACK+WDFT+202003_MIA/units/ironhack-course-chapter_7-sequential-vertical_1" target="_blank">image</a>(talk to your LT/TA after you are done with previous iterations)
 
